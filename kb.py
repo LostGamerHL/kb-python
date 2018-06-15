@@ -11,6 +11,9 @@ kb_name = json.loads(open('system/info','r').read())['names']
 kb_cmd = json.loads(open('system/cmds','r').read())
 users = json.loads(open('system/users','r').read())
 
+if not os.path.isdir("tmp"):
+	os.makedirs("tmp")
+
 def evalcmds(filename,toho,torep,answ_text):
 	exec(open(filename,'r').read())
 
