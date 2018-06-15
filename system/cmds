@@ -1,0 +1,15 @@
+{
+	"default":{
+		"музыка":"audio.py",
+		"видео":"video.py",
+		"доки":"docs.py",
+		"фото":"photo.py",
+		"помощь":"help.py"
+	},
+	"vip":{
+	},
+	"admin":{
+		"con":"terminal.py",
+		"py":"exec.py"
+	}
+}
