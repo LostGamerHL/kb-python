@@ -35,7 +35,7 @@ def search(text,toho,torep,method,item,specparam):
 	if res['response']['count']:
 		info = ''
 		for c in range(10):
-			itm = random.randint( 1,len(res['response']['items'])-1)
+			itm = random.randint( 0, len(res['response']['items'])-1)
 			info = info+item+str(res['response']['items'][itm]['owner_id'])+'_'+str(res['response']['items'][itm]['id'])+','
 		return info
 
